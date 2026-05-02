@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+/* CONTAINER */
+.login-box{
+    background:#111827;
+    padding:40px;
+    width:320px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* TITLE */
+.login-box h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#22c55e;
+}
+
+/* INPUTS */
+.input-group{
+    margin-bottom:15px;
+}
+
+.input-group input{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    background:#1f2937;
+    color:#fff;
+    outline:none;
+}
+
+.input-group input::placeholder{
+    color:#9ca3af;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    background:#22c55e;
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#16a34a;
+}
+
+/* EXTRA */
+.extra{
+    text-align:center;
+    margin-top:15px;
+    font-size:13px;
+    color:#9ca3af;
+}
+
+.extra a{
+    color:#22c55e;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+    <h2>Login</h2>
+
+    <form action ="">
+        <div class="input-group">
+            <input type="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-group">
+            <input type="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit">Sign In</button>
+    </form>
+
+    <div class="extra">
+        <p>Don't have an account? <a href="/register">Register</a></p>
+    </div>
+</div>
+
+</body>
+</html>
